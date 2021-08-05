@@ -1,0 +1,33 @@
+
+body {
+    background-image: url("../img/background.jpeg");
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 20%;
+}
+
+a > p{
+    border-radius: 20%;
+    border: 2px solid rgba(60, 227, 20, 0.26);
+    color: #05390c;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    color: white;
+}
+
