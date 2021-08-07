@@ -1,16 +1,12 @@
 `use strict`
 
 
-$(document).ready(function (){
+$(document).ready(function () {
 
 
-    $(btn).click(function (){
-        $(this).click( function () {
-            alert("Clicked on the button");
-        })
+    $("#buttonBlue").click(function () {
+        alert("Clicked on the button");
     })
-
-
 
 
 })
