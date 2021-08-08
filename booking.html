@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Booking</title>
 
+    <!--  CSS Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -15,119 +20,82 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
         body {
             font-family: 'Bebas Neue', cursive;
-            background-image: url("img/piece-turf.jpg");
-            background-repeat: repeat;
+            /*background-image: url("img/piece-turf.jpg");*/
+            /*background-repeat: repeat;*/
+            background-color: rgba(11, 123, 29, 0.85);
         }
-        .card {
-            margin: 15px;
-            background-color: lightgray;
-        }
-        .card-body {
+
+
+        .row {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
         }
 
-        h5 {
-            font-size: 40px;
+        #navLinks {
+            float: right;
+            width: 100%;
         }
 
-        p, h1, h5 {
-            text-align: center;
+        #navContainer {
+            background-color: white;
+            /*width: 100vw;*/
+            max-height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
+
+        .nav-link > p {
+            font-size: 20px;
+        }
+
     </style>
 
 
 </head>
 <body>
-<!-- Nav Bar -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav" id="main-navBar">
+<!--Nav Bar Start-->
+<div class="container" id="navContainer" style="max-width:100%;">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-6">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.jpeg" width="200px" height="200px" alt="logo" loading="lazy">
+                    <img src="img/logo.jpeg" width="100px" height="100px" alt="logo" loading="lazy">
                 </a>
-                <a class="nav-link" href="index.html"><p>Home</p> <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="about.html"><p>About the Owner</p></a>
-                <a class="nav-link" href="services.html"><p>Services</p></a>
-                <a class="nav-link active" href="booking.html"><p>Book Today</p></a>
-                <a class="nav-link" href="contact.html"><p>Contact Us</p></a>
             </div>
-        </div>
-    </nav>
-</div>
-
-<h1>Services</h1>
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Weed Control</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/weedControl.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Spring Clean Up</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/springCleanUp.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Fertilization</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/fert.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Tree trimming</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/treeTrim.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Weekly & bi-weekly lawn maintenance </h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/lawnMaint.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Pressure washing </h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/pressureWash.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Leaf removal</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/leafRemove.webp" class="card-img-bottom" alt="...">
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Lawn Disease Care</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="img/lawnCare.webp" class="card-img-bottom" alt="...">
+            <div class="col-6" id="navLinks">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="main-navBar">
+                        <a class="nav-link" href="index.html"><p>Home</p> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="about.html"><p>About</p></a>
+                        <a class="nav-link" href="services.html"><p>Services</p></a>
+                        <a class="nav-link active" href="booking.html"><p>Book Today</p></a>
+                        <a class="nav-link" href="contact.html"><p>Contact Us</p></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>
+<!--Nav Bar End-->
 
+<!--Main Body Start-->
+<!--Main Body End-->
 
 
 <!--jQuery-->
@@ -136,7 +104,6 @@
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous">
 </script>
-
 
 
 <!--Bootstrap-->

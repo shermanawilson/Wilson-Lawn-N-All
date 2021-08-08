@@ -21,32 +21,64 @@
         background-image: url("img/piece-turf.jpg");
         background-repeat: repeat;
     }
-    h1, p{
+    .row {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #navLinks {
+        float: right;
+        width: 100%;
+    }
+
+    #navContainer {
+        background-color: white;
+        /*width: 100vw;*/
+        max-height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-link > p {
+        font-size: 20px;
     }
 </style>
 
 
 </head>
 <body>
-<!-- Nav Bar -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav" id="main-navBar">
+<!--Nav Bar Start-->
+<div class="container" id="navContainer" style="max-width:100%;">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-6">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.jpeg" width="200px" height="200px" alt="logo" loading="lazy">
+                    <img src="img/logo.jpeg" width="100px" height="100px" alt="logo" loading="lazy">
                 </a>
-                <a class="nav-link active" href="#"><p>Home</p> <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="about.html"><p>About the Owner</p></a>
-                <a class="nav-link" href="services.html"><p>Services</p></a>
-                <a class="nav-link" href="contact.html"><p>Book Today</p></a>
-                <a class="nav-link" href="contact.html"><p>Contact Us</p></a>
             </div>
-        </div>
-    </nav>
+            <div class="col-6" id="navLinks">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="main-navBar">
+                        <a class="nav-link active" href="index.html"><p>Home</p> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="about.html"><p>About</p></a>
+                        <a class="nav-link" href="services.html"><p>Services</p></a>
+                        <a class="nav-link" href="booking.html"><p>Book Today</p></a>
+                        <a class="nav-link" href="contact.html"><p>Contact Us</p></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
+<!--Nav Bar End-->
 <h1>VETERAN OWNED & OPERATED</h1>
 <h1>Where here it’s done right the first time!</h1>
 <div class="container">
